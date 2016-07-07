@@ -7,10 +7,15 @@
     <link href="../css/StyleSheet960.css" rel="stylesheet" />
     <link href="../css/StyleSheet768.css" rel="stylesheet" />
     <link href="../css/StyleSheet320.css" rel="stylesheet" />
+    <link href="../css/Carousel.css" rel="stylesheet" />
+   <link href="../css/Masonry.css" rel="stylesheet" />
+    <!--[if IE 8]>
+    <link href="../css/IE8.css" rel="stylesheet" />
+        <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <main>
-        <div>
+    <main>    
             <header>
                 <div class="head">
                     <a class="header_gluck" href="#">URLAUBSGLÜCK</a>
@@ -29,60 +34,86 @@
                     </article>
                 </div>
             </header>
-            <div class="carousel">
-                <article class="wrapper_banner">How Urlaubglück works?</article>
-                <p class="carousel_pic">
-                    <a class="carousel_link" href="#"><img class="carousel_img" src="../img/comp.png" /></a>
-                    <a class="carousel_link" href="#"><img class="carousel_img" src="../img/drive.png" /></a>
-                    <a class="carousel_link" href="#"><img class="carousel_img" src="../img/legs.png" /></a>
-                </p>
+            <div class="carousel_main">
+                <article class="grid-banner">How Urlaubglück works?</article>
+                <div class="middle">
+                    <div class="carousel">
+                        <div id="slider-wrap">
+                            <div id="slider">
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/comp.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/drive.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/legs.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/001.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/sky.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_second">
+                        <div id="slider-wrap">
+                            <div id="slider">
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/comp.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/drive.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/legs.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/planet.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/cloud.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel_third">
+                        <div id="slider-wrap">
+                            <div id="slider">
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/comp.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/drive.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/legs.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/planet.png"></a></div>
+                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/sky.png"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="wrapper">
-                <article class="wrapper_banner">Meet a partner for your best holiday</article>
+                <article class="grid-banner">Meet a partner for your best holiday</article>
                 <div class="wrapper_table">
-                    <div class="wrapper_table_row">
-                        <section class="wwww">
-                            <a class="wrapper_table_link" href="#">
-                                <img class="wrapper_link_text_img" src="../img/Untitled-1.png" />
-                                <img class="wrapper_ellipse" src="../img/Ellipse-1.png" />
-                                <span class="wrapper_link_text">Bradley Hunter</span>
-                            </a>
-                            <span class="wrapper_link_description">Based in Chicago. I love playing tennis and loud music.</span>
-                        </section>
-                    </div>
-                    <div class="wrapper_table_row">
-                        <section class="wwww">
+                    <section class="wrapper_section_1">
+                        <a class="wrapper_table_link" href="#">
+                            <img class="wrapper_link_text_img" src="../img/Untitled-1.png" />
+                            <img class="wrapper_ellipse" src="../img/Ellipse-1.png" />
+                        </a>
+                        <div class="wrapper_text">
+                            <div class="wrapper_link_text">Bradley Hunter</div>
+                            <div class="wrapper_link_description">Based in Chicago. I love playing tennis and loud music.</div>
+                        </div>
+                    </section>
+                    <section class="wrapper_section_234">
+                        <section class="wrapper_section">
                             <a class="wrapper_table_link" href="#">
                                 <img class="wrapper_link_text_img" src="../img/Untitled-2.png" />
                                 <img class="wrapper_ellipse" src="../img/Ellipse-2.png" />
-                                <span class="wrapper_link_text">Heather Walker</span>
                             </a>
-                            <span class="wrapper_link_description">I'm happy person that loves cats amd climbing on mountains.</span>
+                            <div class="wrapper_link_text">Heather Walker</div>
+                            <div class="wrapper_link_description">I'm happy person that loves cats amd climbing on mountains.</div>
                         </section>
-                    </div>
-                    <div class="wrapper_table_row">
-                        <section class="wwww">
+                        <section class="wrapper_section">
                             <a class="wrapper_table_link" href="#">
                                 <img class="wrapper_link_text_img" src="../img/Untitled-3.png" />
                                 <img class="wrapper_ellipse" src="../img/Ellipse-3.png" />
-                                <span class="wrapper_link_text">Lucas Marsha</span>
                             </a>
-                            <span class="wrapper_link_description">
+                            <div class="wrapper_link_text">Lucas Marsha</div>
+                            <div class="wrapper_link_description">
                                 I get my inspiration from nature and objects around me.
                                 I have a passion to colours, typograthy and skateboards.
-                            </span>
+                            </div>
                         </section>
-                    </div>
-                    <div class="wrapper_table_row">
-                        <section class="wwww">
+                        <section class="wrapper_section">
                             <a class="wrapper_table_link" href="#">
                                 <img class="wrapper_link_text_img" src="../img/Untitled-4.png" />
                                 <img class="wrapper_ellipse" src="../img/Ellipse-4.png" />
-                                <span class="wrapper_link_text">Bradley Hunter</span>
                             </a>
-                            <span class="wrapper_link_description">Based in Chicago. I love playing tennis and loud music.</span>
+                            <div class="wrapper_link_text">Bradley Hunter</div>
+                            <div class="wrapper_link_description">Based in Chicago. I love playing tennis and loud music.</div>
                         </section>
-                    </div>
+                    </section>
                 </div>
                 <div class="wrapper_table_768">
                     <div class="first_768">
@@ -125,62 +156,68 @@
                         </div>
                     </div>
                 </div>
-                <button class="wrapper_button">See other partners</button>
-            </div>
-            <div class="hr">
-                <div class="pictures">
-                    <article class="wrapper_banner">Discover holiday activity ideas</article>
-                    <p class="pictures_link">
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-1.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-2.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-3.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-4.png" /></a>
-                        <a href="#"><img id="nth" class="pictures_img" src="../img/Ideas-5.png" /></a>
-                        <a href="#"><img id="nth" class="pictures_img" src="../img/Ideas-6.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-7.png" /></a>
-                    </p>
-                    <p class="pictures_link_320">
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-1-320.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-2-320.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-3-320.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-4-320.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-5-320.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-6-320.png" /></a>
-                        <a href="#"><img class="pictures_img" src="../img/Ideas-7-320.png" /></a>
-                    </p>
-                    <article class="wrapper_banner">Discover holiday activity ideas</article>
-                    <article class="pictures_question">Hi! What are your holiday interests?</article>
-                    <input class="pictures_input" type="text" placeholder="Enter your interests" />
-                    <button class="search">Search partners</button>
+                <div class="wrapper_btn">
+                    <button class="wrapper_button">See other partners</button>
                 </div>
             </div>
-            <footer>
-                <section>
-                    <span class="footer_gluck">URLAUBSGLÜCK</span>
-                    <ul class="footer_menu">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                    <div class="footer_div">
-                        <span class="footer_menu_title">Company</span>
-                        <span class="footer_menu_dist">Partners</span>
+            <div class="hr">
+                <div class="ajax">
+                    <article class="grid-banner">Discover holiday activity ideas</article>
+                    <div class="grid">
+                        <div class="grid-item"><a href="#"><img class="grid-img" src="../img/Ideas-1.png" /></a></div>
+                        <div class="grid-item grid-item--width2 grid-item--height2"><a href="#"><img class="grid-img" src="../img/Ideas-2.png" /></a></div>
+                        <div class="grid-item grid-item--width2 grid-item--height2"><a href="#"><img class="grid-img" src="../img/Ideas-3.png" /></a></div>
+                        <div class="grid-item grid-item--width2 grid-item--height2"><a href="#"><img class="grid-img" src="../img/Ideas-4.png" /></a></div>
+                        <div class="grid-item grid-item--width3"><a href="#"><img class="grid-img" src="../img/Ideas-5.png" /></a></div>
+                        <div class="grid-item grid-item--width3"><a href="#"><img class="grid-img" src="../img/Ideas-6.png" /></a></div>
+                        <div class="grid-item grid-item--width2 grid-item--height2"><a href="#"><img class="grid-img" src="../img/Ideas-7.png" /></a></div>
                     </div>
-                </section>
+                    <p class="grid-link-320">
+                        <a href="#"><img class="grid-img" src="../img/Ideas-1-320.png" /></a>
+                        <a href="#"><img class="grid-img" src="../img/Ideas-2-320.png" /></a>
+                        <a href="#"><img class="grid-img" src="../img/Ideas-3-320.png" /></a>
+                        <a href="#"><img class="grid-img" src="../img/Ideas-4-320.png" /></a>
+                        <a href="#"><img class="grid-img" src="../img/Ideas-5-320.png" /></a>
+                        <a href="#"><img class="grid-img" src="../img/Ideas-6-320.png" /></a>
+                        <a href="#"><img class="grid-img" src="../img/Ideas-7-320.png" /></a>
+                    </p>
+                    <article class="grid-banner">Discover holiday activity ideas</article>
+                    <article class="grid-question">Hi! What are your holiday interests?</article>
+                    <input class="grid-input" type="text" placeholder="Enter your interests" />
+                    <button class="search">Search partners</button>
+                </div>
+               
+            </div>
+        <footer>
+            <section>
+                <span class="footer_gluck">URLAUBSGLÜCK</span>
+                <ul class="footer_menu">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+                <div class="footer_div">
+                    <span class="footer_menu_title">Company</span>
+                    <span class="footer_menu_dist">Partners</span>
+                </div>
+            </section>
 
-                <aside>
-                    <span class="footer_emblem">DESIGNED BY</span>
-                    <img class="footer_img" src="../img/footer.png" />
-                    <span class="footer_areto">ARETO</span>
-                    <span class="footer_dev">DEVELOPMENT</span>
-                </aside>
-            </footer>
+            <aside>
+                <span class="footer_emblem">DESIGNED BY</span>
+                <img class="footer_img" src="../img/footer.png" />
+                <span class="footer_areto">ARETO</span>
+                <span class="footer_dev">DEVELOPMENT</span>
+            </aside>
+        </footer>
         </div>
     </main>
 
 
-    <script src="../Scripts/jquery-3.0.0.min.js"></script>
-    <script src="../js/JavaScript1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
+    <script src="../js/Carousel-Slider.js"></script>
+    <script src="../js/MasonryLayout.js"></script>
 </body>
 </html>

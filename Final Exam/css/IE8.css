@@ -30,6 +30,8 @@
 /******************************/
 header {
     background-image: url("../img/Untitled.png");
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/Untitled.png', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='../img/Untitled.png', sizingMethod='scale')";
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
