@@ -269,30 +269,6 @@
         margin-top: 100px;
     }
 
-    .grid-link {
-        display: none;
-        margin-bottom: 90px;
-    }
-
-    .grid-link-320 {
-        display: block;
-    }
-
-    .grid-img {
-        border-radius: 13px;
-        padding: 8px;
-    }
-
-    #nth {
-        width: 490px;
-        height: 310px;
-    }
-
-    .grid-img:hover {
-        opacity: 0.5;
-        filter: alpha(opacity=50); /* For IE8 and earlier */
-    }
-
     .grid-question {
         font-family: "Roboto-Light";
         margin-top: 35px;
