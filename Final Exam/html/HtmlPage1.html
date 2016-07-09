@@ -9,10 +9,8 @@
     <link href="../css/StyleSheet320.css" rel="stylesheet" />
     <link href="../css/Carousel.css" rel="stylesheet" />
    <link href="../css/Masonry.css" rel="stylesheet" />
-    <!--[if IE 8]>
-    <link href="../css/IE8.css" rel="stylesheet" />
-        <![endif]-->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    
 </head>
 <body>
     <main>    
@@ -37,39 +35,21 @@
             <div class="carousel_main">
                 <article class="grid-banner">How Urlaubglück works?</article>
                 <div class="middle">
-                    <div class="carousel">
-                        <div id="slider-wrap">
-                            <div id="slider">
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/comp.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/drive.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/legs.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/001.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/sky.png"></a></div>
-                            </div>
-                        </div>
+                    <div id="carousel">
+                        <figure id="spinner">
+                            <img class="carousel_link" src="../img/15.jpg" alt>
+                            <img class="carousel_link" src="../img/016.jpg" alt>
+                            <img class="carousel_link" src="../img/001.jpg" alt>
+                            <img class="carousel_link" src="../img/1.jpg" alt>
+                            <img class="carousel_link" src="../img/002.jpg" alt>
+                            <img class="carousel_link" src="../img/003.jpg" alt>
+                            <img class="carousel_link" src="../img/004.jpg" alt>
+                            <img class="carousel_link" src="../img/a5D1Z4A.png" alt>
+                            <img class="carousel_link" src="../img/beawesome.jpg" alt>
+                        </figure>
                     </div>
-                    <div class="carousel_second">
-                        <div id="slider-wrap">
-                            <div id="slider">
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/comp.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/drive.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/legs.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/planet.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/cloud.png"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel_third">
-                        <div id="slider-wrap">
-                            <div id="slider">
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/comp.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/drive.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/legs.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/planet.png"></a></div>
-                                <div class="slide"><a class="carousel_link" href="#"><img class="img" src="../img/sky.png"></a></div>
-                            </div>
-                        </div>
-                    </div>
+                    <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+                    <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>          
                 </div>
             </div>
             <div class="wrapper">
@@ -171,20 +151,20 @@
                         <div class="grid-item"></div>
                         <div class="grid-item"></div>
                         <div class="grid-item"></div>
-                        <div class="grid-item grid-item--width2 grid-item--height2"></div>
+                        <div class="grid-item grid-item--width2"></div>
                         <div class="grid-item grid-item--width3"></div>
-                        <div class="grid-item grid-item--height3"></div>
-                        <div class="grid-item grid-item--height2"></div>
+                        <div class="grid-item grid-item--width2"></div>
+                        <div class="grid-item grid-item--width2"></div>
                         <div class="grid-item grid-item--width3"></div>
                         <div class="grid-item"></div>
                         <div class="grid-item"></div>
                         <div class="grid-item grid-item--width3"></div>
-                        <div class="grid-item grid-item--height2"></div>
+                        <div class="grid-item grid-item--width2"></div>
                     </div>
                     <article class="grid-banner">Discover holiday activity ideas</article>
                     <article class="grid-question">Hi! What are your holiday interests?</article>
-                    <input class="grid-input" type="text" placeholder="Enter your interests" />
-                    <button class="search">Search partners</button>
+                    <input class="grid-input _sw" type="text" placeholder="Enter your interests" />
+                    <button class="search" id="searchPartners">Search partners</button>
                 </div>
                
             </div>
@@ -219,5 +199,6 @@
     <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.js"></script>
     <script src="../js/Carousel-Slider.js"></script>
     <script src="../js/MasonryLayout.js"></script>
+    <script src="../js/ajax.js"></script>
 </body>
 </html>

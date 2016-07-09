@@ -1,123 +1,63 @@
 ﻿/*******************************/
 /*          CAROUSEL           */
 /*******************************/
-body {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin: 0 auto;
-}
 
 .carousel_main {
     font-family: 'Montserrat-Regular';
     margin-bottom: 100px;
     margin-top: 100px;
-    width: 960px;
+    width: auto;
     margin: 0 auto;
 }
 
-.carousel_pic {
-    margin-top: 35px;
-}
-
-.carousel_img {
-    padding: 8px;
-    border-radius: 15px;
-}
-
-.carousel_second {
-    width: 300px;
-    float: right;
-    position: relative;
-    top: -396px;
-    right: 329px;
-}
-
-.carousel_third {
-    float: right;
-    position: relative;
-    top: -396px;
-    right: -302px;
-}
-
-#slider-wrap { /* Оболочка слайдера и кнопок */
-    width: 300px;
-    height: 397px;
-}
-
-.img {
-    width: 100%;
-    height: 500px;
-    border-style:none;
-}
-
-#slider { /* Оболочка слайдера */
-    width: 99%;
-    height: 397px;
+div#carousel {
+    perspective: 1200px;
+    background: rgb(151,151,151);
+    padding-top: 10%;
+    font-size: 0;
+    margin-bottom: 3rem;
     overflow: hidden;
-    border: #eee solid 1px;
-    position: relative;
-    border-radius: 10px;
 }
 
-.slide { /* Слайд */
-    width: 100%;
-    height: 100%;
+figure#spinner {
+    transform-style: preserve-3d;
+    height: 300px;
+    transform-origin: 50% 50% -500px;
+    transition: 1s;
 }
 
-.img {
-    width: 300px;
-    height: 397px;
-}
-
-.sli-links { /* Кнопки смены слайдов */
-    text-align: center;
-    position: relative;
-    top: -40px;
-}
-
-    .sli-links .control-slide {
-        margin: 2px;
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        overflow: hidden;
-        text-indent: -9999px;
-        /*background: url(../img/radioBg.png) center bottom no-repeat;*/
+    figure#spinner img {
+        width: 40%;
+        max-width: 425px;
+        position: absolute;
+        left: 30%;
+        transform-origin: 50% 50% -500px;
+        outline: 1px solid transparent;
     }
 
-        .sli-links .control-slide:hover {
-            cursor: pointer;
-            background-position: center center;
-        }
+        figure#spinner img:nth-child(1) { transform: rotateY(0deg); }
+        figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+        figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+        figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+        figure#spinner img:nth-child(5) { transform: rotateY(-180deg); }
+        figure#spinner img:nth-child(6) { transform: rotateY(-225deg); }
+        figure#spinner img:nth-child(7) { transform: rotateY(-270deg); }
+        figure#spinner img:nth-child(8) { transform: rotateY(-315deg); }
 
-        .sli-links .control-slide.active {
-            background-position: center top;
-        }
-
-#prewbutton, #nextbutton { /* Ссылка "Следующий" и "Педыдущий" */
-    display: block;
-    width: 15px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    text-indent: -999px;
-    background: url(../img/arrowBg.png) left center no-repeat;
-    opacity: 0.8;
-    z-index: 3;
-    outline: none !important;
+div#carousel ~ span {
+    color: black;
+    margin: 5%;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: 0.6s color;
+    position: relative;
+    margin-top: -6rem;
+    border-bottom: none;
+    line-height: 0;
 }
 
-#prewbutton {
-    left: 10px;
-}
-
-#nextbutton {
-    right: 10px;
-    background: url(../img/arrowBg.png) right center no-repeat;
-}
-
-    #prewbutton:hover, #nextbutton:hover {
-        opacity: 1;
+    div#carousel ~ span:hover {
+        color: red;
+        cursor: pointer;
     }
