@@ -1,5 +1,4 @@
-﻿
-'use strict'; // Проверяем на валидность
+﻿'use strict'; // Проверяем на валидность
 
     var ajaxModule = function () { };
     ajaxModule.prototype = {
